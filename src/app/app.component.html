@@ -1,0 +1,15 @@
+<div style="background-color: black; width: 100%;">
+  <mat-sidenav-container>
+    <mat-sidenav #sideNav mode="side" opened>
+      <app-side-nav>
+
+      </app-side-nav>
+    </mat-sidenav>
+    <mat-sidenav-content>
+    <app-toolbar [inutSideNav]="sideNav"></app-toolbar>
+    <router-outlet></router-outlet>
+  </mat-sidenav-content>
+</mat-sidenav-container>
+</div>
+
+
